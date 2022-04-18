@@ -8,8 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { PedidosComponent } from './pedidos/pedidos.component';
 import { FacturasComponent } from './facturas/facturas.component';
 import { VentasComponent } from './ventas/ventas.component';
-import { AlmacenComponent } from './almacen/almacen.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { LotesComponent } from './lotes/lotes.component';
+import { ProductosComponent } from './productos/productos.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +19,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     PedidosComponent,
     FacturasComponent,
     VentasComponent,
-    AlmacenComponent,
-    NavBarComponent
+    NavBarComponent,
+    LotesComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,

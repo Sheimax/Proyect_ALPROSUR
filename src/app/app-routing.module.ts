@@ -1,11 +1,12 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AlmacenComponent } from './almacen/almacen.component';
 import { AppComponent } from './app.component';
 import { FacturasComponent } from './facturas/facturas.component';
 import { HomeComponent } from './home/home.component';
 import { PedidosComponent } from './pedidos/pedidos.component';
 import { VentasComponent } from './ventas/ventas.component';
+import { LotesComponent } from './lotes/lotes.component';
+import { ProductosComponent } from './productos/productos.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "/home", pathMatch: "full"},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: "pedidos", component: PedidosComponent},
   {path: "facturas", component: FacturasComponent},
   {path: "ventas", component: VentasComponent},
-  {path: "almacen", component: AlmacenComponent}
+  {path: "lotes", component: LotesComponent},
+  {path: "productos", component: ProductosComponent}
 ];
 
 @NgModule({

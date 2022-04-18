@@ -1,40 +1,46 @@
 <section>
-    <nav class="navbar navbar-light" style="background-color: #cad2c5">
-      <div class="container-fluid">
-        <a class="navbar-brand" routerLink="pedidos">
-          <img
-            src="../assets/box.svg"
-            alt=""
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          Pedidos
-        </a>
-        <a class="navbar-brand" routerLink="facturas">
-          <img
-            src="../assets/card-checklist.svg"
-            alt=""
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          Facturas
-        </a>
-        <a class="navbar-brand" routerLink="home">
-            <img src="" alt="">
-        </a>
-        <a class="navbar-brand" routerLink="ventas">
-          <img
-            src="../assets/currency-dollar.svg"
-            alt=""
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          Ventas
-        </a>
-        <a class="navbar-brand" routerLink="almacen">
+  <nav class="navbar navbar-light" style="background-color: #cad2c5">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="pedidos" routerLinkActive="active">
+        <img
+          src="../assets/box.svg"
+          alt=""
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+        Pedidos
+      </a>
+      <a class="navbar-brand" routerLink="facturas" routerLinkActive="active">
+        <img
+          src="../assets/card-checklist.svg"
+          alt=""
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+        Facturas
+      </a>
+      <a class="navbar-brand" routerLink="home" routerLinkActive="active">
+        Menú
+      </a>
+      <a class="navbar-brand" routerLink="ventas" routerLinkActive="active">
+        <img
+          src="../assets/currency-dollar.svg"
+          alt=""
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+        Ventas
+      </a>
+      <div class="dropdown">
+        <button
+          class="btn btn-secundary dropdown-toggle"
+          type="button"
+          id="dropdown1"
+          data-toggle="dropdown"
+        >
           <img
             src="../assets/boxes.svg"
             alt=""
@@ -43,7 +49,12 @@
             class="d-inline-block align-text-top"
           />
           Almacen
-        </a>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" routerLink="productos">Productos</a>
+          <a class="dropdown-item" routerLink="lotes">Lotes</a>
+        </div>
       </div>
-    </nav>
-  </section>
+    </div>
+  </nav>
+</section>
